@@ -1,0 +1,156 @@
+:root {
+    --whitishgrey: #F2F4F7;
+    --white: #fff;
+    --greyishwhite: #dadde1;
+    --blue: #0866FF;
+    --hoverblue: #1877F2;
+    --green: #42b72a;
+    --hovergreen: #36A420;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: var(--whitishgrey)
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 78%;
+    height: 100vh;
+}
+
+.lhs {
+    width: 50%;
+    padding-bottom: 12%;
+}
+
+img{
+    height: 106px;
+    margin: -28px;
+}
+
+p {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 1.75rem;
+    font-weight: normal;
+    line-height: 32px;
+    margin-top: 1rem;
+}
+
+form {
+    background-color: var(--white);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    border-bottom: var(--greyishwhite);
+    margin: 0.5rem;
+}
+
+input {
+    display: inline-block;
+    margin: auto;
+    padding: 1.2rem 1rem;
+    width: 100%;
+    border: 0.05px solid var(--greyishwhite);
+    background: var(--white);
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 6px;
+}
+
+input:focus {
+    border-color: var(--blue);
+    outline: none;
+  }
+
+form, input ::placeholder {
+    padding: 1.1rem 1rem;
+    width: 30vw;
+    
+}
+
+input::placeholder {
+    font-size: 1.1rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.login {
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 0;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.login:hover {
+    background-color: var(--hoverblue);
+}
+
+.forgot {
+    background: var(--white);
+    color:var(--blue);
+    font-family: Helvetica, Arial, sans-serif;}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.new {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 0;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    width: 13rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.new:hover {
+    background-color: var(--hovergreen);
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--greyishwhite);
+    margin: 1rem 0;
+    width: 100%;
+}
+
+button {
+    background-color: var(--white);
+}
+
+footer {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: black;
+    
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
